@@ -1189,18 +1189,18 @@ if ("nuevo".equals(actionAt)) {
         </select>
 
         <label>Diagnóstico</label>
-        <textarea name="diagnostico" required><%= SecurityUtils.h(aten.getDiagnostico()) %></textarea>
+        <textarea name="diagnostico" required></textarea>
 
         <label>Tratamiento</label>
-        <textarea name="tratamiento" required><%= SecurityUtils.h(aten.getTratamiento()) %></textarea>
+        <textarea name="tratamiento" required></textarea>
 
         <label>Receta</label>
-        <textarea name="receta"><%= SecurityUtils.h(aten.getReceta()) %></textarea>
+        <textarea name="receta"></textarea>
 
         <label>Notas</label>
-        <textarea name="notas"><%= SecurityUtils.h(aten.getNotas()) %></textarea>
+        <textarea name="notas"></textarea>
 
-        <button type="submit" class="btn-primary">Actualizar</button>
+        <button type="submit" class="btn-primary">Guardar</button>
         <a href="app.jsp?mod=atenciones" class="btn-outline">Cancelar</a>
 
     </form>

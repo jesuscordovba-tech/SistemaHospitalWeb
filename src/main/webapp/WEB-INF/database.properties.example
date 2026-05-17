@@ -1,0 +1,5 @@
+db.host=localhost
+db.port=3306
+db.name=hospital_final
+db.user=root
+db.password=tu_contraseña

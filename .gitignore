@@ -1,0 +1,28 @@
+# Eclipse
+.project
+.classpath
+.settings/
+build/
+bin/
+*.class
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+*.iml
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Config (personalizado)
+src/main/webapp/WEB-INF/database.properties
+!src/main/webapp/WEB-INF/database.properties.example
+
+# Temp
+*.bak
+*~

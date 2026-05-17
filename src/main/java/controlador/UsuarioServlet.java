@@ -19,6 +19,18 @@ public class UsuarioServlet extends HttpServlet {
     private PacienteDAO pdao = new PacienteDAO();
 
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        String accion = req.getParameter("accion");
+        if ("eliminar".equalsIgnoreCase(accion)) {
+            eliminar(req, resp);
+        } else {
+            resp.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
+                    "GET solo permite eliminar usuarios.");
+        }
+    }
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
